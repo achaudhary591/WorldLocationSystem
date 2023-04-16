@@ -42,7 +42,7 @@ public class WorldController {
 		return worldService.findLanguageById(langCode);
 	}
 
-	@GetMapping("/suggests")
+	@GetMapping("/suggest")
 	public List<BaseDTO> suggest(@RequestParam("prefix") String prefix) {
 		return worldService.getSuggestions(prefix.toLowerCase());
 	}
